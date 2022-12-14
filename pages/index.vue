@@ -12,6 +12,7 @@
     Add
   </button>
   <p>{{ msg }}</p>
+  <p>Nuxt3 YEAHHH!</p>
 </template>
 
 <script setup lang="ts">
