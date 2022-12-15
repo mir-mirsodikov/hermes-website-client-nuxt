@@ -1,8 +1,5 @@
 <template>
-  <div
-    id="root"
-    class="bg-slate-800"
-  >
+  <div>
     <NuxtLayout>
       <NuxtPage />
     </NuxtLayout>
