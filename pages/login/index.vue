@@ -9,7 +9,7 @@
       class="bg-red-700/50 rounded-md p-4 mb-4 flex flex-row justify-between border border-red-600"
     >
       <p class="text-white">
-        Incorrect username or password.
+        Email does not exist.
       </p>
       <a
         href="#"
@@ -35,7 +35,7 @@
           class="w-full text-white p-2 m-auto rounded-md mt-1 bg-slate-900 shadow-inner focus:outline"
           type="email"
         >
-        <button class="bg-blue-600 hover:bg-blue-700 w-full mt-4 p-2 text-white rounded-md shadow-lg">
+        <button class="bg-violet-600 hover:bg-violet-700 w-full mt-4 p-2 text-white rounded-md shadow-lg">
           Sign in
         </button>
       </form>
@@ -46,7 +46,8 @@
         Don't have an account? <a
           class="text-sky-300 hover:underline decoration-2 underline-offset-2"
           href="#"
-        >Get started</a>
+        >Get
+          started</a>
       </p>
     </div>
   </div>
@@ -61,7 +62,6 @@ const signIn = () => {
     error.value = true;
     return;
   }
-  console.log('Sign in');
 };
 
 const closeError = () => {
