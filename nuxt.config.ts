@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   runtimeConfig: {
     public: {
-      authServer: process.env.AUTH_SERVER,
+      authServer: process.env.AUTH_SERVER_API,
     }
   },
   css: ['~/assets/css/main.css'],

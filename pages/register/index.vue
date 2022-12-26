@@ -60,8 +60,15 @@ const email = ref<string>('');
 const username = ref<string>('');
 const name = ref<string>('');
 
-const signUp = () => {
+const signUp = async () => {
   console.log('sign up');
+  const res = await AuthService.signup({
+    email: email.value,
+    username: username.value,
+    name: name.value
+  });
+
+  console.log(res);
 };
 </script>
 
