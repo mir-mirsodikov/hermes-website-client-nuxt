@@ -7,6 +7,9 @@ html, body {
 }
 
 @layer components {
+  html {
+    @apply bg-slate-900
+  }
   .form-input {
     @apply w-full text-white p-2 m-auto rounded-md mt-1 mb-3 bg-slate-900 shadow-inner focus:outline;
   }
