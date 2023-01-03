@@ -23,7 +23,7 @@
       </a>
     </div>
 
-    <div class="bg-slate-800 rounded-md p-4">
+    <FormContainer class="bg-slate-800 rounded-md p-4">
       <form @submit.prevent="signIn">
         <label
           class="text-slate-300"
@@ -35,21 +35,17 @@
           class="w-full text-white p-2 m-auto rounded-md mt-1 bg-slate-900 shadow-inner focus:outline"
           type="email"
         >
-        <button class="bg-violet-600 hover:bg-violet-700 w-full mt-4 p-2 text-white rounded-md shadow-lg">
+        <FormButton title="Sign in">
           Sign in
-        </button>
+        </FormButton>
       </form>
-    </div>
+    </FormContainer>
 
-    <div class="rounded-md border mt-4 p-4">
-      <p class="text-white text-sm text-center">
-        Don't have an account? <a
-          class="text-sky-300 hover:underline decoration-2 underline-offset-2"
-          href="#"
-        >Get
-          started</a>
-      </p>
-    </div>
+    <FormFooter
+      info="Don't have an account?"
+      action="Get started"
+      location="/register"
+    />
   </div>
 </template>
 
